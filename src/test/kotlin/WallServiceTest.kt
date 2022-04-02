@@ -57,6 +57,6 @@ class WallServiceTest {
 
         val result = service.update(update)
 
-        assertTrue(!result)
+        assertTrue(result)
     }
 }
