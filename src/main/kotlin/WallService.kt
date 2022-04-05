@@ -1,6 +1,6 @@
 package post
 
-class WallService {
+object WallService {
     private var posts = emptyArray<Post>()
     private var lastId = 0
 
@@ -18,5 +18,10 @@ class WallService {
             }
         }
         return false
+    }
+
+    fun clear(){
+        posts = emptyArray()
+        lastId = 0
     }
 }

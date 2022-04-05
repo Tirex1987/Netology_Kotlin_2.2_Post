@@ -1,7 +1,5 @@
 package post
 
-import java.util.*
-
 data class Post(
     var id: Int,                //Идентификатор записи
     val ownerId: Int,           //Идентификатор владельца стены, на которой размещена запись
@@ -27,15 +25,4 @@ data class Post(
     var isFavorite: Boolean,    //true, если объект добавлен в закладки у текущего пользователя
     var donut: Any,          //Информация о записи VK Donut
     var postponedId: Int        //Идентификатор отложенной записи. Это поле возвращается тогда, когда запись стояла на таймере
-){
-    constructor(ownerId: Int, text: String, date: Int, friendsOnly: Boolean, markedAsAds: Boolean) : this(
-        id = 0, ownerId = ownerId, fromId = ownerId,
-        createdBy = 0, date = date, text, replyOwnerId = 0,
-        replyPostId = 0, friendsOnly = friendsOnly,
-        comments = Any(), copyright = Any(), likes = Any(),
-        reposts = Any(), views = Any(), postType = "post",
-        signerId = 0, canPin = true, canDelete = true, canEdit = true,
-        isPinned = false, markedAsAds = markedAsAds, isFavorite = false,
-        donut = Any(), postponedId =0
-    )
-}
+)
