@@ -1,4 +1,4 @@
-package post
+import post.*
 
 object WallService {
     private var posts = emptyArray<Post>()
