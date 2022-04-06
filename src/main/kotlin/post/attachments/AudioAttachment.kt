@@ -1,9 +1,8 @@
 package post.attachments
 
 data class AudioAttachment(
-    override val type: String = "audio",
     val audio: Audio
-): Attachment
+): Attachment("audio")
 
 data class Audio(
     val id: Int,

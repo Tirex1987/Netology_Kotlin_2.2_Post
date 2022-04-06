@@ -1,9 +1,8 @@
 package post.attachments
 
 data class LinkAttachment(
-    override val type: String = "link",
     val link: Link
-): Attachment
+): Attachment("link")
 
 data class Link(
     val url: String,

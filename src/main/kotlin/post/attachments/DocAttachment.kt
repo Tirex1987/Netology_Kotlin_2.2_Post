@@ -1,9 +1,8 @@
 package post.attachments
 
 data class DocAttachment(
-    override val type: String = "doc",
     val doc: Doc
-): Attachment
+): Attachment("doc")
 
 data class Doc(
     val id: Int,

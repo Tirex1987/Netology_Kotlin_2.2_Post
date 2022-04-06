@@ -1,9 +1,8 @@
 package post.attachments
 
 data class PhotoAttachment(
-    override val type: String = "photo",
     val photo: Photo
-): Attachment
+): Attachment("photo")
 
 data class Photo(
     val id: Int,
