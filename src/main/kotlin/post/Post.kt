@@ -1,5 +1,7 @@
 package post
 
+import post.attachments.Attachment
+
 data class Post(
     var id: Int,                //Идентификатор записи
     val ownerId: Int,           //Идентификатор владельца стены, на которой размещена запись
@@ -24,5 +26,6 @@ data class Post(
     var markedAsAds: Boolean,   //Информация о том, содержит ли запись отметку «реклама»
     var isFavorite: Boolean,    //true, если объект добавлен в закладки у текущего пользователя
     var donut: Any,          //Информация о записи VK Donut
-    var postponedId: Int        //Идентификатор отложенной записи. Это поле возвращается тогда, когда запись стояла на таймере
+    var postponedId: Int,        //Идентификатор отложенной записи. Это поле возвращается тогда, когда запись стояла на таймере
+    var attachments: Array<Attachment>  //Медиавложения записи (фотографии, ссылки и т.п.)
 )

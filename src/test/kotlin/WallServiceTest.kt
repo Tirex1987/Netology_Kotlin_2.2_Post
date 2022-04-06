@@ -17,7 +17,7 @@ class WallServiceTest {
             reposts = Object(), views = Any(), postType = "post",
             signerId = 0, canPin = true, canDelete = true, canEdit = true,
             isPinned = false, markedAsAds = false, isFavorite = false,
-            donut = Any(), postponedId = 0
+            donut = Any(), postponedId = 0, attachments = emptyArray()
         )
 
         val result = WallService.add(post)
@@ -37,7 +37,7 @@ class WallServiceTest {
                 reposts = Object(), views = Any(), postType = "post",
                 signerId = 0, canPin = true, canDelete = true, canEdit = true,
                 isPinned = false, markedAsAds = false, isFavorite = false,
-                donut = Any(), postponedId = 0
+                donut = Any(), postponedId = 0, attachments = emptyArray()
             )
         )
         WallService.add(
@@ -49,7 +49,7 @@ class WallServiceTest {
                 reposts = Object(), views = Any(), postType = "post",
                 signerId = 0, canPin = true, canDelete = true, canEdit = true,
                 isPinned = false, markedAsAds = false, isFavorite = false,
-                donut = Any(), postponedId = 0
+                donut = Any(), postponedId = 0, attachments = emptyArray()
             )
         )
         WallService.add(
@@ -61,7 +61,7 @@ class WallServiceTest {
                 reposts = Object(), views = Any(), postType = "post",
                 signerId = 0, canPin = true, canDelete = true, canEdit = true,
                 isPinned = false, markedAsAds = true, isFavorite = false,
-                donut = Any(), postponedId = 0
+                donut = Any(), postponedId = 0, attachments = emptyArray()
             )
         )
         val update = Post(
@@ -72,7 +72,7 @@ class WallServiceTest {
             reposts = Object(), views = Any(), postType = "post",
             signerId = 0, canPin = true, canDelete = true, canEdit = true,
             isPinned = false, markedAsAds = true, isFavorite = false,
-            donut = Any(), postponedId = 0
+            donut = Any(), postponedId = 0, attachments = emptyArray()
         )
 
         val result = WallService.update(update)
@@ -92,7 +92,7 @@ class WallServiceTest {
                 reposts = Object(), views = Any(), postType = "post",
                 signerId = 0, canPin = true, canDelete = true, canEdit = true,
                 isPinned = false, markedAsAds = false, isFavorite = false,
-                donut = Any(), postponedId = 0
+                donut = Any(), postponedId = 0, attachments = emptyArray()
             )
         )
         WallService.add(
@@ -104,7 +104,7 @@ class WallServiceTest {
                 reposts = Object(), views = Any(), postType = "post",
                 signerId = 0, canPin = true, canDelete = true, canEdit = true,
                 isPinned = false, markedAsAds = false, isFavorite = false,
-                donut = Any(), postponedId = 0
+                donut = Any(), postponedId = 0, attachments = emptyArray()
             )
         )
         WallService.add(
@@ -116,7 +116,7 @@ class WallServiceTest {
                 reposts = Object(), views = Any(), postType = "post",
                 signerId = 0, canPin = true, canDelete = true, canEdit = true,
                 isPinned = false, markedAsAds = true, isFavorite = false,
-                donut = Any(), postponedId = 0
+                donut = Any(), postponedId = 0, attachments = emptyArray()
             )
         )
         val update = Post(
@@ -127,7 +127,7 @@ class WallServiceTest {
             reposts = Object(), views = Object(), postType = "post",
             signerId = 0, canPin = true, canDelete = true, canEdit = true,
             isPinned = false, markedAsAds = true, isFavorite = false,
-            donut = Object(), postponedId = 0
+            donut = Object(), postponedId = 0, attachments = emptyArray()
         )
 
         val result = WallService.update(update)
