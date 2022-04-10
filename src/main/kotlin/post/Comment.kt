@@ -3,10 +3,10 @@ package post
 import post.attachments.Attachment
 
 open class Comment(
-    val id: Int,
+    var id: Int,
     val fromId: Int,
     val postId: Int,
-    val date: Int,
+    var date: Int,
     val text: String,
     val replyToUser: Int,
     val attachments: Array<Attachment>?,
